@@ -6,26 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Seven Seas Spa</title>
-    <style>
-        .navbar-custom {
-            color: #3B2F2F;
-        }
-
-        .navbar-custom .nav-link {
-            color: #3B2F2F;
-        }
-
-        .navbar-custom .nav-link.active {
-            font-weight: bold;
-        }
-
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -40,10 +25,10 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -52,12 +37,148 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!--  Hero Section -->
+    <div class="container-fluid hero-section text-center">
+        <h1 class="display-4">Welcome to Seven Seas Spa</h1>
+        <p class="lead">We are dedicated to improving your overall wellbeing.</p>
+        <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+
+    <!-- Service section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row text-center">
+            <div class="col-md-3 d-flex mb-4">
+                <div class="card border-0 shadow flex-fill">
+                    <img src="assets/images/yoga.png" class="card-img-top" alt="Yoga Classes">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Yoga Classes</h5>
+                        <p class="card-text">Improve your flexibility and reduce stress with our yoga classes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex mb-4">
+                <div class="card border-0 shadow flex-fill">
+                    <img src="assets/images/nutritional.jpg" class="card-img-top" alt="Nutritional Advice">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Nutritional Advice</h5>
+                        <p class="card-text">We offer support and resources to help you take care of your mental health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex mb-4">
+                <div class="card border-0 shadow flex-fill">
+                    <img src="assets/images/mental-health.png" class="card-img-top" alt="Mental Health Support">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mental Health Support</h5>
+                        <p class="card-text">Join our wellness programs to improve your overall health and wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex mb-4">
+                <div class="card border-0 shadow flex-fill">
+                    <img src="assets/images/wellness.png" class="card-img-top" alt="Wellness Progress">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Wellness Progress</h5>
+                        <p class="card-text">Indulge in our luxurious spa packages for ultimate relaxation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wellness Tips Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Wellness Tips</h2>
+        <p class="text-center">Living a healthy lifestyle doesn't have to be hard. Here are some simple tips to help you improve your overall wellbeing:</p>
+        <div class="d-flex justify-content-center">
+            <ul class="list-unstyled text-start">
+                <li><strong>Stay Active:</strong> Regular physical activity can improve your mood and reduce
+                    feelings of anxiety.</li>
+                <li><strong>Eat Healthy:</strong> A balanced diet can help you maintain a healthy weight and reduce
+                    your risk of chronic diseases.</li>
+                <li><strong>Get Enough Sleep:</strong> Good sleep is essential for your physical health and mental
+                    wellbeing.</li>
+                <li><strong>Manage Stress:</strong> Techniques such as meditation and deep breathing can help you
+                    manage stress and improve your mental health.</li>
+                <li><strong>Stay Hydrated:</strong> Drinking enough water can improve your energy levels and brain
+                    function.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="assets/images/jane_smith.png" class="rounded-circle mb-3" alt="Client 1" width="100" height="100">
+                        <p class="text-center">"The spa services were amazing! I felt so relaxed and rejuvenated."</p>
+                        <h5 class="text-center">- Sarah L.</h5>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="assets/images/john_doe.png" class="rounded-circle mb-3" alt="Client 2" width="100" height="100">
+                        <p class="text-center">"The yoga classes have transformed my life. Highly recommend!"</p>
+                        <h5 class="text-center">- John D.</h5>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="assets/images/emily_johnson.png" class="rounded-circle mb-3" alt="Client 3" width="100" height="100">
+                        <p class="text-center">"The staff is so friendly, and the treatments are top-notch."</p>
+                        <h5 class="text-center">- Emily R.</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="footer text-center text-lg-start py-3 mt-auto" style="background-color: #6F4E37;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                    <p style="color: #FFEBD4;">© 2022 Seven Seas Spa</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.facebook.com/Co</div>de.InstituteIRL/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page" class="me-2" style="color: #FFEBD4;"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/codeinstitute" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Twitter" class="me-2" style="color: #FFEBD4;"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/codeinstitute/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Instagram" class="me-2" style="color: #FFEBD4;"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/code-institute/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Connect with us on LinkedIn" class="me-2" style="color: #FFEBD4;"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script srcion//fonts.googleapis.com/css2?family=Handle&display=swap"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
