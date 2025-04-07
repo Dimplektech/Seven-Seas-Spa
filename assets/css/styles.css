@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+        .navbar-custom {
+            color: #3B2F2F;
+        }
+
+        .navbar-custom .nav-link {
+            color: #3B2F2F;
+        }
+
+        .navbar-custom .nav-link.active {
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
+            background-size: cover;
+            color: #FFEBD4;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-family: 'Handlee', cursive;
+        }
+        /* Apply the same font to all h2 and h3 elements */
+        h2, h3, h5 {
+            font-family: 'Handlee', cursive;
+            font-weight: bold;
+
+        }
+        
+   
+
+        .btn {
+            color: #3B2F2F;
+        }
+  
